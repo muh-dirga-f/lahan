@@ -21,7 +21,7 @@
   <script src="<?php echo base_url('assets/'); ?>plugins/jquery/jquery.min.js"></script>
 </head>
 
-<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<body class="hold-transition //dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
   <div class="wrapper">
 
     <!-- Preloader -->
@@ -45,14 +45,14 @@
             <i class="fas fa-expand-arrows-alt"></i>
           </a>
         </li>
-        <li class="nav-item dropdown tasks-menu">
+        <!-- <li class="nav-item dropdown tasks-menu">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
             <i class="fa fa-history"></i>
           </a>
           <ul class="dropdown-menu">
             <li class="header"> Last Login : <i class="fa fa-clock-o"></i> <?= empty($last_login) ? "First Time Login" : $last_login; ?></li>
           </ul>
-        </li>
+        </li> -->
         <!-- User Account: style can be found in dropdown.less -->
         <li class="nav-item dropdown user user-menu">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
@@ -72,11 +72,11 @@
             </li>
             <!-- Menu Footer-->
             <li class="user-footer">
-              <div class="float-left">
+              <!-- <div class="float-left">
                 <a href="<?php echo base_url(); ?>profile" class="btn btn-warning btn-flat"><i class="fa fa-user-circle"></i> Profile</a>
-              </div>
-              <div class="float-right">
-                <a href="<?php echo base_url(); ?>logout" class="btn btn-default btn-flat"><i class="fa fa-sign-out"></i> Sign out</a>
+              </div> -->
+              <div class="//float-right text-center">
+                <a href="<?php echo base_url(); ?>logout" class="btn btn-danger btn-flat"><i class="fa fa-sign-out"></i> Sign out</a>
               </div>
             </li>
           </ul>
@@ -108,32 +108,37 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-tree"></i>
-                <p>
-                  Hutan
-                  <i class="right fas fa-angle-left"></i>
-                </p>
+              <a href="<?php echo base_url('data/kecamatan'); ?>" class="nav-link">
+                <i class="nav-icon fas fa-map"></i>
+                <p>Kecamatan</p>
               </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="<?php echo base_url('data/hutan_lindung'); ?>" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Hutan Lindung</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Hutan Produksi</p>
-                  </a>
-                </li>
-              </ul>
+            </li>
             </li>
             <li class="nav-item">
-              <a href="<?php echo base_url(); ?>userListing" class="nav-link">
-                <i class="nav-icon fas fa-users"></i>
-                <p>Users</p>
+              <a href="<?php echo base_url('data/perkebunan'); ?>" class="nav-link">
+                <i class="nav-icon fas fa-tree"></i>
+                <p>Perkebunan</p>
+              </a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url('data/pertanian'); ?>" class="nav-link">
+                <i class="nav-icon fas fa-seedling"></i>
+                <p>Pertanian</p>
+              </a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url('data/perikanan'); ?>" class="nav-link">
+                <i class="nav-icon fas fa-fish"></i>
+                <p>Perikanan</p>
+              </a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url('data/industri'); ?>" class="nav-link">
+                <i class="nav-icon fas fa-industry"></i>
+                <p>Industri</p>
               </a>
             </li>
           </ul>
